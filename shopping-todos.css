@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,400);
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  min-height: 100%;
+  background: white;
+}
+
+header {
+  background: #fff;
+  padding: 20px 15px 15px 15px;
+  position: relative;
+}
+
+.new-task input {
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+  width: 100%;
+  font-size: 3em;
+  font-weight: 200;
+  margin-bottom: -20px;
+}
+
+.new-task input:focus{
+  outline: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+.toggle-checked {
+  cursor: pointer;
+}
+
+.delete {
+  float: right;
+  font-size: 1em;
+  position: relative;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  color: #eee;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-top: -20px; /*fix this hack*/
+}
+
+li {
+  position: relative;
+  list-style: none;
+  padding: 1.2em;
+  border: #eee solid 1px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+}
+
+li .text {
+  margin-left: 10px;
+  display: inline;
+
+}
+
+li.checked {
+  color: #888;
+}
+
+li.checked .text {
+  text-decoration: line-through;
+}

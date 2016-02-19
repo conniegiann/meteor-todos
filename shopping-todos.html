@@ -1,0 +1,53 @@
+<head>
+  <title>Todo List</title>
+</head>
+ 
+<body>
+
+	<div class="new-todos">
+		<span>new task list</span> <button>+</button>	
+	</div>
+
+  <div class="container">
+    <header>
+      <!-- <h1>Shopping Todo List</h1> -->
+      <form class="new-task">
+        <input class="input-box" autocomplete="off" type="text" name="text" placeholder="new task" />
+      </form>
+    </header>
+ 
+    <ul>
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </ul>
+
+    <div>
+    	You have completed tasks
+    </div>
+  </div>
+</body>
+ 
+<template name="task">
+
+	<li class="{{#if checked}}checked{{/if}}">
+		
+		<div class="toggle-checked" checked="{{checked}}">
+			<div class="text">{{text}}</div>
+		</div>
+		
+		<button class="delete">&times;</button>
+
+	</li>
+
+</template>
+
+
+
+<template name="todosCount">
+</template>
+
+
+
+
+
